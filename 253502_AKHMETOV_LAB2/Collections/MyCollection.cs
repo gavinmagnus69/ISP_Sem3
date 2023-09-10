@@ -6,7 +6,7 @@ namespace Akhmetov_253502_Lab1.Collections;
 using Akhmetov_253502_Lab1.Interfaces;
 using Akhmetov_253502_Lab1.Contracts;
 
-class Node<T>
+public class Node<T>
 {
     public T obj;
     public Node<T> next = null;
@@ -35,6 +35,10 @@ public class MyList<T> : /*ICustomCollection<T>*/ IEnumerable<T>
     private int counter = 0;
     private Node<T> cursor = null;
 
+    public Node<T> return_head()
+    {
+        return head;
+    }
 
     public void Add(T obj)
     {
@@ -84,7 +88,7 @@ public class MyList<T> : /*ICustomCollection<T>*/ IEnumerable<T>
 
     public void Reset()
     {
-        /*if (head != null)
+        if (head != null)
         {
             cursor = head;
 
@@ -93,13 +97,13 @@ public class MyList<T> : /*ICustomCollection<T>*/ IEnumerable<T>
         {
             cursor = null;
 
-        }*/
-        cursor = null;
+        }
+        
     }
 
-    public void Next()
+    public void MoveNext()
     {
-        if (cursor.next != null)
+        /*if (cursor.next != null)
         {
             cursor = cursor.next;
             return;
@@ -107,9 +111,14 @@ public class MyList<T> : /*ICustomCollection<T>*/ IEnumerable<T>
         else
         {
             cursor = null;
-            /*IndexOutOfRangeException exp = new IndexOutOfRangeException();
-            throw exp;*/
+            throw new Exception("we are here");
+        }*/
+        if (cursor.Equals(null))
+        {
+            Reset();
         }
+
+        cursor = cursor.next;
     }
 
     public T Current()
@@ -123,8 +132,11 @@ public class MyList<T> : /*ICustomCollection<T>*/ IEnumerable<T>
         {
             throw new Exception("Cursor is equal to null");
         }
+    }
 
-
+    public ref Node<T> return_cursor()
+    {
+        return ref cursor;
     }
 
     public int Count() => counter;
@@ -261,7 +273,7 @@ public class MyList<T> : /*ICustomCollection<T>*/ IEnumerable<T>
     
     public IEnumerator<T> GetEnumerator()
     {
-        return new IServiceEnumerator<T>(this);
+        return new IServiceEnumerator<T>(return_head());
     }
 
     // Must also implement IEnumerable.GetEnumerator, but implement as a private method.

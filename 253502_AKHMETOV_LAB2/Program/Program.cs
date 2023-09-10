@@ -23,6 +23,7 @@ client3.add_service(serv3);
 Console.WriteLine(gek.Sum_Of_All());
 Console.WriteLine(gek.Count_Of_Clients("water"));*/
 MyList<int> l = new MyList<int>();
+l.Add(3);
 l.Add(5);
 l.Add(6);
 l.Add(7);

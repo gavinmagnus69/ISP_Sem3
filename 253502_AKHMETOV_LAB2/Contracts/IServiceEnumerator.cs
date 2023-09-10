@@ -6,13 +6,18 @@ using Akhmetov_253502_Lab1.Entities;
 
 public class IServiceEnumerator<T> : IEnumerator<T>
 {
-    private MyList<T> list;
-    private T _current;
+    private Node<T> _head = null;
+    private Node<T> _current = null;
 
-    public IServiceEnumerator(MyList<T> tmp)
+    public IServiceEnumerator(Node<T> tmp)
     {
-        list = tmp;
-        _current = list.Current();
+        //Console.WriteLine("constr");
+        _head = tmp;
+        //_current = list.return_cursor();
+        //Node<T> head = list.return_head();
+        //Console.WriteLine(head.obj);
+        _current = new Node<T>();
+        _current.next = _head;
 
     }
 
@@ -23,31 +28,43 @@ public class IServiceEnumerator<T> : IEnumerator<T>
 
         get
         {
-            if (list == null || _current == null)
+            //Console.WriteLine("get");
+            if (_head == null || _current == null)
             {
-                throw new InvalidOperationException();
+                throw new Exception("null node or list");
             }
 
-            return _current;
+            return _current.obj;
         }
     }
 
-    /*private object Current1
+    private object Current1
     {
 
-        get { return this.Current; }
-    }*/
+        get
+        {
+            //Console.WriteLine("get2");
+            return this.Current;
+        }
+    }
 
     object IEnumerator.Current
     {
+
         get;
+
     }
     
     
     public bool MoveNext()
     {
-        list.Next();
-        try
+        //Console.WriteLine("move");
+
+        _current = _current.next;
+        
+        //_current = list.return_cursor();
+        //Console.WriteLine(_current.obj);
+        /*try
         {
             _current = list.Current();
 
@@ -55,20 +72,26 @@ public class IServiceEnumerator<T> : IEnumerator<T>
         catch (Exception e)
         {
             return false;
+        }*/
+        
+        if(_current == null)
+        {
+            //Console.WriteLine("case null");
+            return false;
         }
         
-        /*if (_current == null)
-            return false;*/
         return true;
     }
     public void Reset()
     {
-        list.Reset();
-        _current = list.Current();
+        //Console.WriteLine("reset");
+        //list.Reset();
+        _current = _head;
     }
     private bool disposedValue = false;
     public void Dispose()
     {
+        //Console.WriteLine("dispose");
         Dispose(disposing: true);
         GC.SuppressFinalize(this);
     }
@@ -81,7 +104,7 @@ public class IServiceEnumerator<T> : IEnumerator<T>
             {
                 // Dispose of managed resources.
             }
-            _current = default;
+            _current = null;
         }
 
         this.disposedValue = true;
