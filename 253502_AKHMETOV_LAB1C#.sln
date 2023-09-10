@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "253502_AKHMETOV_LAB1C#", "253502_AKHMETOV_LAB1C#\253502_AKHMETOV_LAB1C#.csproj", "{EE8DD812-281A-4D81-B827-45EE83E0EB30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "253502_AKHMETOV_LAB2", "253502_AKHMETOV_LAB2\253502_AKHMETOV_LAB2.csproj", "{4BDF2CF2-0DF7-48AB-A6E3-1A3FF5B374C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE8DD812-281A-4D81-B827-45EE83E0EB30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8DD812-281A-4D81-B827-45EE83E0EB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8DD812-281A-4D81-B827-45EE83E0EB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8DD812-281A-4D81-B827-45EE83E0EB30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDF2CF2-0DF7-48AB-A6E3-1A3FF5B374C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDF2CF2-0DF7-48AB-A6E3-1A3FF5B374C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDF2CF2-0DF7-48AB-A6E3-1A3FF5B374C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDF2CF2-0DF7-48AB-A6E3-1A3FF5B374C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E37478B-E55D-4525-B9C8-B83D5C452A7B}
+	EndGlobalSection
+EndGlobal
