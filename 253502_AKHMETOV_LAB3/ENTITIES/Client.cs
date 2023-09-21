@@ -1,27 +1,28 @@
 ﻿namespace Akhmetov_253502_Lab1.Entities;
 using Akhmetov_253502_Lab1.Contracts;
-using Akhmetov_253502_Lab1.Collections;
 public class Client
 {
     public string name = "";
-    public MyList<Services> services;
-    public event Action<string>? ev; 
+    public List<Services> services;
+    //public event Action<string>? ev; 
     public Client() {
         name = "";
-        services = new MyList<Services>();
+        services = new List<Services>();
     }
     public Client(string name) {
         this.name = name;
-        services = new MyList<Services>();
-        ev += s => Console.WriteLine(s);
+        services = new List<Services>();
+        //ev += s => Console.WriteLine(s);
     }
-    public void add_service(Services serv) {
+
+    public void add_service(Services serv)
+    {
         services.Add(serv);
-        ev?.Invoke("service added to client");
     }
+
     public int sum_services() {
         int accum = 0;
-        if (services.Count() == 1)
+        /*if (services.Count() == 1)
         {
             return services[0].obj;
         }
@@ -31,8 +32,11 @@ public class Client
             {
                 accum += services[i] + services[i - 1];
             }
-
-           
+        }*/
+        var sum = from i in services select i.obj;
+        foreach (var i in sum)
+        {
+            accum += i;
         }
         return accum;
     

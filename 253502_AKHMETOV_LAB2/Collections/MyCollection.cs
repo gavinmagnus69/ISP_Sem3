@@ -39,6 +39,20 @@ public class MyList<T> : /*ICustomCollection<T>*/ IEnumerable<T>
     {
         return head;
     }
+    public IEnumerator<T> GetEnumerator()
+    {
+        return new IServiceEnumerator<T>(return_head());
+    }
+
+    // Must also implement IEnumerable.GetEnumerator, but implement as a private method.
+    private IEnumerator GetEnumerator1()
+    {
+        return this.GetEnumerator();
+    }
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator1();
+    }
 
     public void Add(T obj)
     {
@@ -271,20 +285,7 @@ public class MyList<T> : /*ICustomCollection<T>*/ IEnumerable<T>
 
     }
     
-    public IEnumerator<T> GetEnumerator()
-    {
-        return new IServiceEnumerator<T>(return_head());
-    }
-
-    // Must also implement IEnumerable.GetEnumerator, but implement as a private method.
-    private IEnumerator GetEnumerator1()
-    {
-        return this.GetEnumerator();
-    }
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        return GetEnumerator1();
-    }
+    
     
 
 }

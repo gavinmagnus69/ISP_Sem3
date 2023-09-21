@@ -3,8 +3,14 @@
 using System.Collections;
 using Akhmetov_253502_Lab1.Contracts;
 using Akhmetov_253502_Lab1.Collections;using Akhmetov_253502_Lab1.Entities;
-public class GIES<Serv, Cli> : IGIES<Serv, Cli> where Serv : Services where Cli : Client/*, IEnumerable<Serv>*/ 
+public class GIES<Serv, Cli> : IGIES<Serv, Cli> where Serv : Services where Cli : Client/*, IEnumerable<Serv>*/
 {
+
+
+
+    //public delegate void add_tarif_delegate(string s);
+
+    public event Action<string>? Notify;
     private MyList<Serv> services;
     private MyList<Cli> clients;
     public GIES() { 
@@ -26,9 +32,11 @@ public class GIES<Serv, Cli> : IGIES<Serv, Cli> where Serv : Services where Cli 
 
     public void Add_Tarif(Serv obj) { 
         services.Add(obj);
+        Notify?.Invoke("new tarif added");
     }
     public void Add_Client_Info(Cli obj) {
         clients.Add(obj);
+        Notify?.Invoke("new client added");
     }
     public int Show_Sum(string name)
     {
@@ -37,6 +45,7 @@ public class GIES<Serv, Cli> : IGIES<Serv, Cli> where Serv : Services where Cli 
             Console.WriteLine(clients[i].name);
             if (name == clients[i].name)
             {
+                
                 return clients[i].sum_services();
             }
         }
