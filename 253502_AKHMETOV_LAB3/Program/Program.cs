@@ -21,7 +21,6 @@ using Akhmetov_253502_Lab1.Entities;
  gek.Give_All_Services();
  //Console.WriteLine(gek.Higher_than(500));
  gek.List_of_sum();
-
  //journal.get_events();
 
 /*MyList<int> l = new MyList<int>();
