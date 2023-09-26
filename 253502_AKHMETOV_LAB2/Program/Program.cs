@@ -7,8 +7,7 @@ try
 {
  var journal = new Journal();
  var gek = new GIES<Services, Client>();
-
- Startup.SetupData(gek);
+ 
 
 
  gek.Notify += journal.add_event;
