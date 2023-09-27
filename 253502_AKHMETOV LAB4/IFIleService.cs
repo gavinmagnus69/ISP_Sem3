@@ -1,7 +1,7 @@
 ﻿namespace _253502_AKHMETOV_LAB4;
 
-public interface IFIleService<T>
+public interface IFIleService<T>  where T : Passangers 
 {
-    IEnumerable<T> ReadFile(string fileName);
+    IEnumerable<Passangers> ReadFile(string fileName);
     void SaveData(IEnumerable<T> data, string fileName);
 }
