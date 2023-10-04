@@ -9,3 +9,4 @@ C:\romanfiles\253502_AKHMETOV_LAB1C#\Akhmetov2.Domain\obj\Debug\net7.0\Akhmetov2
 C:\romanfiles\253502_AKHMETOV_LAB1C#\Akhmetov2.Domain\obj\Debug\net7.0\refint\Akhmetov2.Domain.dll
 C:\romanfiles\253502_AKHMETOV_LAB1C#\Akhmetov2.Domain\obj\Debug\net7.0\Akhmetov2.Domain.pdb
 C:\romanfiles\253502_AKHMETOV_LAB1C#\Akhmetov2.Domain\obj\Debug\net7.0\ref\Akhmetov2.Domain.dll
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Akhmetov2.Domain\obj\Debug\net7.0\Akhmetov2.Domain.csproj.AssemblyReference.cache

@@ -1,9 +1,9 @@
 ﻿
-
-using System.Xml;
 using System.Xml.Serialization;
 using Akhmetov2.Domain;
 using System.Xml.Linq;
+using Newtonsoft.Json;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace SerializerLib;
 public class Serializer<T> : ISerializer<T> where T : Hospital
@@ -48,7 +48,9 @@ public class Serializer<T> : ISerializer<T> where T : Hospital
 
     public IEnumerable<T> DeSerializeJSON(string fileName)
     {
-        throw new NotImplementedException();
+        string s = File.ReadAllText(fileName);
+        var v = JsonConvert.DeserializeObject<IEnumerable<T>>(s);
+        return v;
     }
 
     public void SerializeByLINQ(IEnumerable<T> xxx, string fileName)
@@ -78,11 +80,16 @@ public class Serializer<T> : ISerializer<T> where T : Hospital
         XmlSerializer serializer = new XmlSerializer(typeof(List<T>));
         FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate);
         serializer.Serialize(fs, xxx);
-        
+        fs.Close();
+
     }
 
     public void SerializeJSON(IEnumerable<T> xxx, string fileName)
     {
-        throw new NotImplementedException();
-    }
+       
+        
+        string json = JsonConvert.SerializeObject(xxx);
+        //Console.WriteLine(json);
+        File.WriteAllText(fileName, json);
+    }   
 }
