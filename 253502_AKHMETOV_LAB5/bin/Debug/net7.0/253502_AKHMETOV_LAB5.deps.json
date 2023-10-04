@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "253502_AKHMETOV_LAB5/1.0.0": {
+        "dependencies": {
+          "SerializerLib": "1.0.0"
+        },
+        "runtime": {
+          "253502_AKHMETOV_LAB5.dll": {}
+        }
+      },
+      "253502_AKHMETOV LAB4/1.0.0": {
+        "runtime": {
+          "253502_AKHMETOV LAB4.dll": {}
+        }
+      },
+      "Akhmetov2.Domain/1.0.0": {
+        "runtime": {
+          "Akhmetov2.Domain.dll": {}
+        }
+      },
+      "SerializerLib/1.0.0": {
+        "dependencies": {
+          "253502_AKHMETOV LAB4": "1.0.0",
+          "Akhmetov2.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SerializerLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "253502_AKHMETOV_LAB5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "253502_AKHMETOV LAB4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Akhmetov2.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SerializerLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qtuYAJUttA/3FlJ7/Oe6nOyhZuAw3lw4XvahErMokH28J8aSKL0eWQzOPvIF/DqbPiEesd4jBivZ1pNDsNQFHg==",
+  "success": true,
+  "projectFilePath": "C:\\romanfiles\\253502_AKHMETOV_LAB1C#\\253502_AKHMETOV_LAB5\\253502_AKHMETOV_LAB5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

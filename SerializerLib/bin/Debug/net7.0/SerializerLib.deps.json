@@ -1,0 +1,46 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "SerializerLib/1.0.0": {
+        "dependencies": {
+          "Akhmetov2.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SerializerLib.dll": {}
+        }
+      },
+      "253502_AKHMETOV LAB4/1.0.0": {
+        "runtime": {
+          "253502_AKHMETOV LAB4.dll": {}
+        }
+      },
+      "Akhmetov2.Domain/1.0.0": {
+        "runtime": {
+          "Akhmetov2.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SerializerLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "253502_AKHMETOV LAB4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Akhmetov2.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

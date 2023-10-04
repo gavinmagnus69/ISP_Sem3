@@ -67,7 +67,9 @@ public class GIES<Serv, Cli> : IGIES<Serv, Cli> where Serv : Services where Cli 
     public int Show_Sum(string name)
     {
        
-        var clsum = from i in clients where i.name == name select i.sum_services();
+        var clsum = from i in clients 
+            where i.name == name 
+            select i.sum_services();
         foreach (var i in clsum)
         {
             return i;
@@ -81,7 +83,8 @@ public class GIES<Serv, Cli> : IGIES<Serv, Cli> where Serv : Services where Cli 
     public int Sum_Of_All()
     {
         int ans = 0;
-        var accum = from i in clients select i.sum_services();
+        var accum = from i in clients 
+            select i.sum_services();
         foreach (var i in accum)
         {
             ans += i;
@@ -113,14 +116,16 @@ public class GIES<Serv, Cli> : IGIES<Serv, Cli> where Serv : Services where Cli 
 
     public void Give_All_Services()
     {
-        var s = from str in services orderby str.Value.obj select str;
-        List<Services> ans = new List<Services>();
+        var s = from str in services 
+            orderby str.Value.obj 
+            select str.Value;
+        /*List<Services> ans = new List<Services>();
         foreach (var i in s)
         {
             ans.Add(i.Value);
-        }
+        }*/
         Console.WriteLine();
-        foreach (var i in ans)
+        foreach (var i in s)
         {
             Console.WriteLine("Serivce - {0}, price = {1}",i.name, i.obj );
             

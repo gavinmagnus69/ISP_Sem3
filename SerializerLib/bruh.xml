@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfHospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Hospital>
+    <hospital_name>Central</hospital_name>
+    <departments>
+      <EmergencyDep>
+        <name>base1</name>
+      </EmergencyDep>
+    </departments>
+  </Hospital>
+  <Hospital>
+    <hospital_name>Central2</hospital_name>
+    <departments>
+      <EmergencyDep>
+        <name>base2</name>
+      </EmergencyDep>
+    </departments>
+  </Hospital>
+</ArrayOfHospital>

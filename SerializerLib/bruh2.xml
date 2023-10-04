@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Hospitals>
+  <hospital name="Central">
+    <department_name>base1</department_name>
+  </hospital>
+  <hospital name="Central2">
+    <department_name>base2</department_name>
+  </hospital>
+</Hospitals>

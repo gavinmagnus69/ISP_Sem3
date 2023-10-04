@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1wJpRVX+H/ekITH1J2YJ07nr3FdU8xr6XXqVq8MuO53e9oZkvwWnTD4wOgdm0Tg7et9LcIdE4QXXeKoWAsSIXg==",
+  "dgSpecHash": "o6zfDjNwaWQ5uFFRm+zmcyuOsiJPvNOMIhngZnCNHkJeQBoOjgiM77X472cwgAagWep5pjwbIJKNZEJmUs6Rfg==",
   "success": true,
   "projectFilePath": "C:\\romanfiles\\253502_AKHMETOV_LAB1C#\\253502_AKHMETOV_LAB2\\253502_AKHMETOV_LAB2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
