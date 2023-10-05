@@ -3,7 +3,6 @@ using System.Xml.Serialization;
 using Akhmetov2.Domain;
 using System.Xml.Linq;
 using Newtonsoft.Json;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace SerializerLib;
 public class Serializer<T> : ISerializer<T> where T : Hospital
@@ -49,8 +48,8 @@ public class Serializer<T> : ISerializer<T> where T : Hospital
     public IEnumerable<T> DeSerializeJSON(string fileName)
     {
         string s = File.ReadAllText(fileName);
-        var v = JsonConvert.DeserializeObject<IEnumerable<T>>(s);
-        return v;
+        return JsonConvert.DeserializeObject<IEnumerable<T>>(s);
+        
     }
 
     public void SerializeByLINQ(IEnumerable<T> xxx, string fileName)

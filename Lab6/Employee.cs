@@ -6,16 +6,11 @@ public class Employee
     public int age = 0;
     public string name = "";
 
-    public Employee(bool m, int a, string name)
+    public Employee(bool m, int a, string n)
     {
         married = m;
         age = a;
-        this.name = name;
+        this.name = n;
     }
-
-    public Employee()
-    {
-    }
-
 
 }
