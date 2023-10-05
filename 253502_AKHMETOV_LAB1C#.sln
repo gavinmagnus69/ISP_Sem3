@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akhmetov2.Domain", "Akhmeto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "253502_AKHMETOV_LAB5", "253502_AKHMETOV_LAB5\253502_AKHMETOV_LAB5.csproj", "{14F9C1FF-F1DF-47F3-816F-B3795DACA145}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab6", "Lab6\Lab6.csproj", "{FEBCCED4-21A9-425E-8B93-6E165E368271}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{14F9C1FF-F1DF-47F3-816F-B3795DACA145}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14F9C1FF-F1DF-47F3-816F-B3795DACA145}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14F9C1FF-F1DF-47F3-816F-B3795DACA145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBCCED4-21A9-425E-8B93-6E165E368271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBCCED4-21A9-425E-8B93-6E165E368271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBCCED4-21A9-425E-8B93-6E165E368271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBCCED4-21A9-425E-8B93-6E165E368271}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
