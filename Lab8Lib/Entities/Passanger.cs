@@ -3,8 +3,8 @@
 public class Passanger
 {
     public int id = new();
-    public string name = "";
-    public bool luggage = false;
+    public string name = "Boba";
+    public bool luggage = true;
 
     public Passanger(int id, string name, bool lug)
     {

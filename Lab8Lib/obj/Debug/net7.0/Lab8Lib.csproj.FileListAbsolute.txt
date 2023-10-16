@@ -1,0 +1,12 @@
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\bin\Debug\net7.0\Lab8Lib.deps.json
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\bin\Debug\net7.0\Lab8Lib.dll
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\bin\Debug\net7.0\Lab8Lib.pdb
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\obj\Debug\net7.0\Lab8Lib.csproj.AssemblyReference.cache
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\obj\Debug\net7.0\Lab8Lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\obj\Debug\net7.0\Lab8Lib.AssemblyInfoInputs.cache
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\obj\Debug\net7.0\Lab8Lib.AssemblyInfo.cs
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\obj\Debug\net7.0\Lab8Lib.csproj.CoreCompileInputs.cache
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\obj\Debug\net7.0\Lab8Lib.dll
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\obj\Debug\net7.0\refint\Lab8Lib.dll
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\obj\Debug\net7.0\Lab8Lib.pdb
+C:\romanfiles\253502_AKHMETOV_LAB1C#\Lab8Lib\obj\Debug\net7.0\ref\Lab8Lib.dll
